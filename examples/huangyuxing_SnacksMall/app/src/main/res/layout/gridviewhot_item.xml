@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/shape_gridview_item"
+    android:orientation="vertical"
+    android:padding="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/CoverIV"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:src="@mipmap/lutest_iv" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:padding="5dp"
+        android:text="[马来西亚可康] 芒果口味果冻布丁 减糖果冻"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvCurrentprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="¥6.50"
+            android:textColor="#ff1500"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvOriginalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="¥16.50"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ivaddcart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_add_to_cart_2x" />
+    </LinearLayout>
+</LinearLayout>

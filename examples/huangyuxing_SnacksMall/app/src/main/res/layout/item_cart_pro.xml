@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cbCartPro"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:checked="true"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/selector_checkbox"
+        android:gravity="center" />
+
+    <ImageView
+        android:padding="2dp"
+        android:id="@+id/ivCartPro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_cartpro_bg"
+        android:src="@mipmap/share_item_sina_weibo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="[美国纷时乐]蜂蜜烤碧根果仁美式风味" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvTaste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="口味:美式蜜蜂"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_cartpro_bg"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvReduce"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_cart_reduce" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                />
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="1"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                />
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_cart_add" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvCurrentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:text="¥16.89" />
+
+        <TextView
+            android:id="@+id/tvOldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥49.8"
+            android:layout_gravity="right"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fourapeteam.snacksmall.MallActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpMall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        />
+        <RadioGroup
+            android:id="@+id/rgMall"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/rbHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/rb_textcolor"
+                android:drawableTop="@drawable/rb_home_pressed"
+                android:text="首页"
+                />
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:id="@+id/rbHot"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="热卖"
+                android:textColor="@color/rb_textcolor"
+                android:drawableTop="@drawable/rb_remai_pressed"
+
+
+                />
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:id="@+id/rbSpecial"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="专题"
+                android:textColor="@color/rb_textcolor"
+                android:drawableTop="@drawable/rb_zhuanti_pressed"
+
+
+                />
+            <RadioButton
+                android:gravity="center"
+                android:button="@null"
+                android:id="@+id/rbMine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/rb_textcolor"
+                android:drawableTop="@drawable/rb_mycat_pressed"
+                android:text="我的小猫"
+
+                />
+
+        </RadioGroup>
+</LinearLayout>
